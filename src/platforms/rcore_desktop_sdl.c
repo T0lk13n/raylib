@@ -54,7 +54,7 @@
     // It seems it does not need to be included to work
     //#include "SDL_opengles2.h"
 #else
-    #include "SDL_opengl.h"     // SDL OpenGL functionality (if required, instead of internal renderer)
+	//#include "SDL_opengl.h"     // SDL OpenGL functionality (if required, instead of internal renderer)
 #endif
 
 //----------------------------------------------------------------------------------

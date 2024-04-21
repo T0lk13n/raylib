@@ -35,22 +35,22 @@
 #define SUPPORT_MODULE_RSHAPES          1
 #define SUPPORT_MODULE_RTEXTURES        1
 #define SUPPORT_MODULE_RTEXT            1       // WARNING: It requires SUPPORT_MODULE_RTEXTURES to load sprite font textures
-#define SUPPORT_MODULE_RMODELS          1
-#define SUPPORT_MODULE_RAUDIO           1
+#define SUPPORT_MODULE_RMODELS          0
+#define SUPPORT_MODULE_RAUDIO           0
 
 //------------------------------------------------------------------------------------
 // Module: rcore - Configuration Flags
 //------------------------------------------------------------------------------------
 // Camera module is included (rcamera.h) and multiple predefined cameras are available: free, 1st/3rd person, orbital
-#define SUPPORT_CAMERA_SYSTEM           1
+#define SUPPORT_CAMERA_SYSTEM           0
 // Gestures module is included (rgestures.h) to support gestures detection: tap, hold, swipe, drag
-#define SUPPORT_GESTURES_SYSTEM         1
+#define SUPPORT_GESTURES_SYSTEM         0
 // Include pseudo-random numbers generator (rprand.h), based on Xoshiro128** and SplitMix64
-#define SUPPORT_RPRAND_GENERATOR        1
+#define SUPPORT_RPRAND_GENERATOR        0
 // Mouse gestures are directly mapped like touches and processed by gestures system
 #define SUPPORT_MOUSE_GESTURES          1
 // Reconfigure standard input to receive key inputs, works with SSH connection.
-#define SUPPORT_SSH_KEYBOARD_RPI        1
+#define SUPPORT_SSH_KEYBOARD_RPI        0
 // Setting a higher resolution can improve the accuracy of time-out intervals in wait functions.
 // However, it can also reduce overall system performance, because the thread scheduler switches tasks more often.
 #define SUPPORT_WINMM_HIGHRES_TIMER     1
@@ -180,9 +180,9 @@
 // NOTE: If enabled, uses external module functions to load default raylib font
 #define SUPPORT_DEFAULT_FONT            1
 // Selected desired font fileformats to be supported for loading
+#define SUPPORT_FILEFORMAT_FNT          1
 #define SUPPORT_FILEFORMAT_TTF          1
-//#define SUPPORT_FILEFORMAT_FNT          1
-//#define SUPPORT_FILEFORMAT_BDF          1
+#define SUPPORT_FILEFORMAT_BDF          1
 
 // Support text management functions
 // If not defined, still some functions are supported: TextLength(), TextFormat()
